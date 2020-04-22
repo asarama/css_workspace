@@ -1,0 +1,56 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+article {
+    margin: 1em;
+}
+
+.flex_container {    
+    display: flex;
+    border: 2px solid grey;
+}
+
+.flex_item {
+    border: 2px dashed rgb(61, 61, 61);
+    padding: 1em;
+    font-size: 1em;
+    text-align: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+}
+
+.flex_item:nth-child(even) {
+    background-color: white;
+    color: black;
+}
+
+/* Flow Direction */
+
+#flow_direction .flow_direction_row_reverse {
+    flex-direction: row-reverse;
+}
+
+#flow_direction .flow_direction_column {
+    flex-direction: column;
+}
+
+#flow_direction .flow_direction_column_reverse {
+    flex-direction: column-reverse;
+}
+
+/* Line Wrapping */
+#line_wrapping .flex_item {
+    width: 25vw;
+}
+
+#line_wrapping .line_wrapping_wrap {
+    flex-wrap: wrap;
+}
+
+#line_wrapping .line_wrapping_wrap_reverse {
+    flex-wrap: wrap-reverse;
+}
