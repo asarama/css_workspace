@@ -79,3 +79,45 @@ Properties:\
 
 For the flex items\
 ```align-self``` : Used to control alignment module properties on a flex item directly
+
+## CSS Grid
+
+Controls how items flow in two dimensions. Flex box lets content size itself, css grid relies on defined gridlines.
+
+### Basics
+
+Items are aligned in rows and columns making cells. Elements can exists in sets of cells.
+
+Defines relationship between grid container and items. The grid is defined by two sets of lines called the grid lines. One set for columns (column axis) and another for rows (row axis). Grid tracks are the space between row column lines. Where row and column lines intersect is what we call cells. Adjacent cells can be combined into grid areas.
+
+### Setting up a grid
+
+Set the property ```display: grid``` on the container.
+
+You can also use ```inline-grid``` if needed.
+
+Define columns ```grid-template-columns: 1fr 1fr 1fr```
+Define rows ```grid-template-rows: 1fr 1fr```
+
+Positioning elements is done via the properties:
+ - ```grid-column-start```
+ - ```grid-column-end```
+ - ```grid-row-start```
+ - ```grid-row-end```
+
+### Auto grid features
+
+```grid-auto-flow``` : Controls how items fill in the grid
+ - row (default)
+ - column
+
+```order``` : Controls when items are placed
+
+### Grid Shorthand
+
+```grid: 1fr 1fr 1fr / 1fr 1fr``` : Sets template columns first then rows \
+```grid: repeat(3, 1fr) / repeat(2, 1fr)``` : Equivalent to example above \
+```grid-column: 2 / 4``` : Sets item to start at column 2 and end at 4 \
+```grid-column: 2 / span 2``` : Sets item to start at column 2 and end 2 after the start column \
+```grid-row: 2 / 4``` : Sets item to start at row 2 and end at 4 \
+```grid-area: row-start / column-start / row-end / column-end``` : Can accept all 4 values from grid-column and grid-row \
