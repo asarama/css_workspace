@@ -106,5 +106,198 @@
             </article>
         </section>
 
+        <section id="display_order">
+            <header>
+                <h2>Display Order</h2>
+            </header>
+
+            <article>
+                <header>Item 4 to front</header>
+                <div class="flex_container display_order_four_to_front">
+                    <div class="flex_item order_1">Item 1</div>
+                    <div class="flex_item order_1">Item 2</div>
+                    <div class="flex_item order_1">Item 3</div>
+                    <div class="flex_item">Item 4</div>
+                </div>
+            </article>
+
+            <article>
+                <header>Item 2 to end</header>
+                <div class="flex_container display_order_four_to_front">
+                    <div class="flex_item">Item 1</div>
+                    <div class="flex_item order_1">Item 2</div>
+                    <div class="flex_item ">Item 3</div>
+                    <div class="flex_item">Item 4</div>
+                </div>
+            </article>
+        </section>
+
+        <section id="flexibility">
+            <header>
+                <h2>Flexibility</h2>
+            </header>
+
+            <article>
+                <header>Item 2 flex-grow set to 2</header>
+                <div class="flex_container">
+                    <div class="flex_item grow_1">Item 1</div>
+                    <div class="flex_item grow_2">Item 2</div>
+                    <div class="flex_item grow_1">Item 3</div>
+                    <div class="flex_item grow_1">Item 4</div>
+                </div>
+            </article>
+
+            <article>
+                <header>flex-grow set to item number</header>
+                <div class="flex_container">
+                    <div class="flex_item grow_1">Item 1</div>
+                    <div class="flex_item grow_2">Item 2</div>
+                    <div class="flex_item grow_3">Item 3</div>
+                    <div class="flex_item grow_4">Item 4</div>
+                </div>
+            </article>
+
+            <article>
+                <header>Item 2 flex-shrink set to 2</header>
+                <div class="flex_container flexibility_shrink">
+                    <div class="flex_item shrink_1">Item 1</div>
+                    <div class="flex_item shrink_2">Item 2</div>
+                    <div class="flex_item shrink_1">Item 3</div>
+                    <div class="flex_item shrink_1">Item 4</div>
+                </div>
+            </article>
+
+            <article>
+                <header>flex-shrink set to item number</header>
+                <div class="flex_container flexibility_shrink">
+                    <div class="flex_item shrink_1">Item 1</div>
+                    <div class="flex_item shrink_2">Item 2</div>
+                    <div class="flex_item shrink_3">Item 3</div>
+                    <div class="flex_item shrink_4">Item 4</div>
+                </div>
+            </article>
+
+            <article>
+                <header>Using flex-basis to increase the initial size of item 2 before flex growth</header>
+                <div class="flex_container">
+                    <div class="flex_item grow_1">Item 1</div>
+                    <div class="flex_item grow_1 flex_basis_200">Item 2</div>
+                    <div class="flex_item grow_1">Item 3</div>
+                    <div class="flex_item grow_1">Item 4</div>
+                </div>
+            </article>
+        </section>
+
+        <section id="alignment">
+            <header>
+                <h2>Alignment</h2>
+            </header>
+
+            <article>
+                <header>Justify content center</header>
+                <div class="flex_container alignment_justify_content_center">
+                    <div class="flex_item">Item 1</div>
+                    <div class="flex_item">Item 2</div>
+                    <div class="flex_item">Item 3</div>
+                    <div class="flex_item">Item 4</div>
+                </div>
+            </article>
+
+            <article>
+                <header>Justify content space evenly</header>
+                <div class="flex_container alignment_justify_content_space_evenly">
+                    <div class="flex_item">Item 1</div>
+                    <div class="flex_item">Item 2</div>
+                    <div class="flex_item">Item 3</div>
+                    <div class="flex_item">Item 4</div>
+                </div>
+            </article>
+
+            <article>
+                <header>Justify content space between</header>
+                <div class="flex_container alignment_justify_content_space_between">
+                    <div class="flex_item">Item 1</div>
+                    <div class="flex_item">Item 2</div>
+                    <div class="flex_item">Item 3</div>
+                    <div class="flex_item">Item 4</div>
+                </div>
+            </article>
+
+            <article>
+                <header>Align items center</header>
+                <div class="flex_container alignment_align_items alignment_align_items_center">
+                    <div class="flex_item">Item 1</div>
+                    <div class="flex_item">Item 2</div>
+                    <div class="flex_item">Item 3</div>
+                    <div class="flex_item">Item 4</div>
+                </div>
+            </article>
+
+            <article>
+                <header>Align items start</header>
+                <div class="flex_container alignment_align_items alignment_align_items_start">
+                    <div class="flex_item">Item 1</div>
+                    <div class="flex_item">Item 2</div>
+                    <div class="flex_item">Item 3</div>
+                    <div class="flex_item">Item 4</div>
+                </div>
+            </article>
+
+            <article>
+                <header>Align items end</header>
+                <div class="flex_container alignment_align_items alignment_align_items_end">
+                    <div class="flex_item">Item 1</div>
+                    <div class="flex_item">Item 2</div>
+                    <div class="flex_item">Item 3</div>
+                    <div class="flex_item">Item 4</div>
+                </div>
+            </article>
+
+            <article>
+                <header>Align content center</header>
+                <div class="flex_container alignment_align_content alignment_align_content_center">
+                    <div class="flex_item">Item 1</div>
+                    <div class="flex_item">Item 2</div>
+                    <div class="flex_item">Item 3</div>
+                    <div class="flex_item">Item 4</div>
+                    <div class="flex_item">Item 5</div>
+                    <div class="flex_item">Item 6</div>
+                    <div class="flex_item">Item 7</div>
+                    <div class="flex_item">Item 8</div>
+                    <div class="flex_item">Item 9</div>
+                </div>
+            </article>
+
+            <article>
+                <header>Align content space between</header>
+                <div class="flex_container alignment_align_content alignment_align_content_space_between">
+                    <div class="flex_item">Item 1</div>
+                    <div class="flex_item">Item 2</div>
+                    <div class="flex_item">Item 3</div>
+                    <div class="flex_item">Item 4</div>
+                    <div class="flex_item">Item 5</div>
+                    <div class="flex_item">Item 6</div>
+                    <div class="flex_item">Item 7</div>
+                    <div class="flex_item">Item 8</div>
+                    <div class="flex_item">Item 9</div>
+                </div>
+            </article>
+
+            <article>
+                <header>Align content space stretch</header>
+                <div class="flex_container alignment_align_content">
+                    <div class="flex_item">Item 1</div>
+                    <div class="flex_item">Item 2</div>
+                    <div class="flex_item">Item 3</div>
+                    <div class="flex_item">Item 4</div>
+                    <div class="flex_item">Item 5</div>
+                    <div class="flex_item">Item 6</div>
+                    <div class="flex_item">Item 7</div>
+                    <div class="flex_item">Item 8</div>
+                    <div class="flex_item">Item 9</div>
+                </div>
+            </article>
+        </section>
+
     </body>
 </html>
