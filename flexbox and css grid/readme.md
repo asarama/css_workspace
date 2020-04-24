@@ -120,4 +120,43 @@ Positioning elements is done via the properties:
 ```grid-column: 2 / 4``` : Sets item to start at column 2 and end at 4 \
 ```grid-column: 2 / span 2``` : Sets item to start at column 2 and end 2 after the start column \
 ```grid-row: 2 / 4``` : Sets item to start at row 2 and end at 4 \
-```grid-area: row-start / column-start / row-end / column-end``` : Can accept all 4 values from grid-column and grid-row \
+```grid-area: row-start / column-start / row-end / column-end``` : Can accept all 4 values from grid-column and grid-row 
+
+### Named Grid Properties
+
+With CSS grid you can name columns and rows to reference them easier without the need of counting lines.
+
+On the container: \
+```grid: [sidebar] 1fr [main_content_one] 1fr [main_content_two] 1fr / [row_one] 1fr [row_two] 1fr``` \
+On the item: \
+```grid-area: row_one / sidebar / row_two / main_content_one```
+
+A better approach is to set the grid normally, add grid-area properties to our items as names, and then use the grid-template-areas property on the container.
+
+1) ```grid: 1fr 1fr 1fr / 1fr 1fr```
+2) ```grid-area: some_item```
+3) ```grid-template-areas: "some_item . ."```\
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;```"some_item . ."```
+
+Now our element with the ```grid-area``` property will be placed in the first column and span both rows. "." is used to signify an empty area.
+
+### Unique Aspects of Grid
+
+Using ```auto``` in our grid template declaration will allow the element to grow and shrink as it's content does.
+
+The ```fr``` unit is used to size grid tracks based on how much space is available in the container. If we set our column definition to ```1fr 1fr``` then both our columns will be of even width. If we set it to ```2fr 1fr``` our first column will take up twice as much space as our second.
+
+You can overlap grid items, but keep in mind items will stack from the first element in the markup to the last. This can be remedied with the z-index property.
+
+### Grid Layout with Box Alignment
+
+The grid container supports properties:
+- justify-content: Horizontal control
+- justify-items
+- align-content: Vertical control 
+- align-items
+
+The grid items support properties:
+- justify-self
+- align-self
+
